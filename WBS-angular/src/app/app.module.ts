@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TaskManageComponent } from './task-manage/task-manage.component';
 import { TaskManageAddComponent } from './task-manage-add/task-manage-add.component';
 import { TaskManageEditComponent } from './task-manage-edit/task-manage-edit.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TaskManageEditComponent } from './task-manage-edit/task-manage-edit.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

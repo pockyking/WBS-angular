@@ -1,15 +1,15 @@
 <form id="taskEditForm" (ngSubmit)="onSubmit()">
   <div>
     <label for="taskName">任务:</label>
-    <input type="text" id="taskName" name="Task Name" >
+    <input type="text" id="taskName" name="Task Name" [(ngModel)]="task.taskName"/>
   </div>
   <div>
     <label for="worker">人员分配:</label>
-    <input type="text" id="worker" name="Worker" >
+    <input type="text" id="worker" name="Worker" [(ngModel)]="task.worker"/>
   </div>
   <div>
     <label for="kind">种类：</label>
-    <input type="text" id="kind" name="Kind">
+    <input type="text" id="kind" name="Kind"[(ngModel)]="task.kind"/>
   </div>
     <div>
       <button>提交</button>
