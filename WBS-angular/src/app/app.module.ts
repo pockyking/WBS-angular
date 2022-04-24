@@ -16,7 +16,7 @@ import { ClockInComponent } from './component/clock-in/clock-in.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ClockInComponent
+    ClockInComponent,
     TaskManageComponent,
     TaskManageAddComponent,
     TaskManageEditComponent
