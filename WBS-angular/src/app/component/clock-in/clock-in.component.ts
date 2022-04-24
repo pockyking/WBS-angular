@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-clock-in',
   templateUrl: './clock-in.component.html',
-  styleUrls: ['./clock-in.component.css']
+  styleUrls: ['./clock-in.component.css'],
 })
 export class ClockInComponent implements OnInit {
   hidden: boolean = false;
@@ -11,23 +11,24 @@ export class ClockInComponent implements OnInit {
   topFlag: boolean = false;
   tintColor: string = '#108ee9';
   unselectedTintColor: string = '#888';
-  tabbarStyle: object = {  position: 'fixed',
-  height: '100%',
-  width: '100%',
-  top: 0 };
+  tabbarStyle: object = {
+    position: 'fixed',
+    height: '100%',
+    width: '100%',
+    top: 0,
+  };
   selectedIndex: number = 1;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  showTabBar(event:any) {
+  showTabBar(event: any) {
     event.preventDefault();
     this.hidden = !this.hidden;
   }
 
-  showNextTabBar(event:any) {
+  showNextTabBar(event: any) {
     event.preventDefault();
     const PANE_COUNT = 4;
     if (this.selectedIndex == PANE_COUNT - 1) {
@@ -38,7 +39,7 @@ export class ClockInComponent implements OnInit {
     console.log('selectedIndex: ', this.selectedIndex);
   }
 
-  showFullScreen(event:any) {
+  showFullScreen(event: any) {
     event.preventDefault();
     this.fullScreen = !this.fullScreen;
     this.tabbarStyle = this.fullScreen
@@ -46,12 +47,12 @@ export class ClockInComponent implements OnInit {
           position: 'fixed',
           height: '100%',
           width: '100%',
-          top: 0
+          top: 0,
         }
       : { height: '400px' };
   }
 
-  changePosition(event:any) {
+  changePosition(event: any) {
     event.preventDefault();
     this.topFlag = !this.topFlag;
   }
@@ -60,5 +61,4 @@ export class ClockInComponent implements OnInit {
     console.log('onPress Params: ', pressParam);
     this.selectedIndex = pressParam.index;
   }
-
 }
