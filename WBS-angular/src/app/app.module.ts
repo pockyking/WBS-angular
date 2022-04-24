@@ -7,6 +7,9 @@ import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TaskManageComponent } from './task-manage/task-manage.component';
+import { TaskManageAddComponent } from './task-manage-add/task-manage-add.component';
+import { TaskManageEditComponent } from './task-manage-edit/task-manage-edit.component';
 
 import { ClockInComponent } from './component/clock-in/clock-in.component';
 
@@ -14,6 +17,9 @@ import { ClockInComponent } from './component/clock-in/clock-in.component';
   declarations: [
     AppComponent,
     ClockInComponent
+    TaskManageComponent,
+    TaskManageAddComponent,
+    TaskManageEditComponent
   ],
   imports: [
     BrowserModule,
