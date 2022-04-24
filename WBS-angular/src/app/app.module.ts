@@ -12,6 +12,8 @@ import { TaskManageAddComponent } from './task-manage-add/task-manage-add.compon
 import { TaskManageEditComponent } from './task-manage-edit/task-manage-edit.component';
 
 import { ClockInComponent } from './component/clock-in/clock-in.component';
+import { ClockInHistoryComponent } from './component/clock-in-history/clock-in-history.component';
+import { ClockInTodayComponent } from './component/clock-in-today/clock-in-today.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ClockInComponent } from './component/clock-in/clock-in.component';
     ClockInComponent,
     TaskManageComponent,
     TaskManageAddComponent,
-    TaskManageEditComponent
+    TaskManageEditComponent,
+    ClockInHistoryComponent,
+    ClockInTodayComponent
   ],
   imports: [
     BrowserModule,
