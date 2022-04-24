@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ClockInComponent } from './component/clock-in/clock-in.component';
 import { TaskManageAddComponent } from './task-manage-add/task-manage-add.component';
 import { TaskManageEditComponent } from './task-manage-edit/task-manage-edit.component';
 import { TaskManageComponent } from './task-manage/task-manage.component';
@@ -15,7 +16,8 @@ const routes: Routes = [ {
 {
   path: 'edit/:id',
   component: TaskManageEditComponent
-}
+},
+  { path: 'clock-in', component: ClockInComponent },
 ];
 
 @NgModule({
