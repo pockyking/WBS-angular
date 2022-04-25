@@ -9,7 +9,7 @@
   (onPress)="tabBarTabOnPress($event)"
 >
   <TabBarItem
-    [title]="'Life'"
+    [title]="'打卡'"
     [key]="'1'"
     [badge]="1"
     [icon]="icon1"
@@ -45,7 +45,7 @@
     </div>
   </TabBarItem>
   <TabBarItem
-    [title]="'Koubei'"
+    [title]="'历史记录'"
     [key]="'2'"
     [badge]="'new'"
     [icon]="icon2"
@@ -72,12 +72,13 @@
       ></div>
     </ng-template>
     <div style="background-color: white; height: 100%; text-align: center">
-      <div style="padding-top: 60px">
+      <app-clock-in-history></app-clock-in-history>
+      <!-- <div style="padding-top: 60px">
         Clicked Koubei tab， show Koubei information
       </div>
       <ng-container>
         <ng-template [ngTemplateOutlet]="content"></ng-template>
-      </ng-container>
+      </ng-container> -->
     </div>
   </TabBarItem>
   <TabBarItem
