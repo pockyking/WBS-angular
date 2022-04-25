@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClockInComponent } from './component/clock-in/clock-in.component';
-import { TaskManageAddComponent } from './task-manage-add/task-manage-add.component';
-import { TaskManageEditComponent } from './task-manage-edit/task-manage-edit.component';
-import { TaskManageComponent } from './task-manage/task-manage.component';
+import { TaskManageAddComponent } from './component/task-manage-add/task-manage-add.component';
+import { TaskManageEditComponent } from './component/task-manage-edit/task-manage-edit.component';
+import { TaskManageComponent } from './component/task-manage/task-manage.component';
 
 const routes: Routes = [ {
   path: '',

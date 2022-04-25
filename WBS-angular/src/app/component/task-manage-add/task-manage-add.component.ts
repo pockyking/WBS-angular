@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {AppComponent} from '../app.component';
+import {AppComponent} from '../../app.component';
 import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({

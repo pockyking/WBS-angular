@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {HttpClient} from '@angular/common/http';
-import {AppComponent} from '../app.component';
+import {AppComponent} from '../../app.component';
 
 @Component({
   selector: 'app-task-manage-edit',
