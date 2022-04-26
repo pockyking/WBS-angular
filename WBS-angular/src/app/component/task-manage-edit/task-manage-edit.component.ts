@@ -21,7 +21,7 @@ export class TaskManageEditComponent implements OnInit {
    * 获取与后台对接的URL
    */
    getUrl(): string {
-    return 'http://localhost:8080/Task/' + this.id;
+    return 'http://localhost:8080/wbs/task' + this.id;
   }
 
   /**

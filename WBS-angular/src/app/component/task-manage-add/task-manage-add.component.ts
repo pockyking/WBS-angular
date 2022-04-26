@@ -10,8 +10,8 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class TaskManageAddComponent implements OnInit {
   taskName!: String;
-  worker!: string;
-  kind!: string;
+  executor!: string;
+  type!: string;
   message = '';
 
   constructor(
@@ -38,11 +38,11 @@ export class TaskManageAddComponent implements OnInit {
    * 当声明方法为public（此关键字可省略）时，相当于绑定到了V层，V层中可以进行调用或是绑定操作。
    */
   public onSubmit(): void {
-    const url = 'http://localhost:8080/Task';
+    const url = 'http://localhost:8080/wbs/task';
     const task = {
       taskName: this.taskName,
-      worker: this.worker,
-      kind: this.kind,
+      executor: this.executor,
+      type: this.type,
     };
 
     console.log(task);

@@ -13,11 +13,11 @@
   <tr *ngFor="let task of tasks">
     <td>{{task.id}}</td>
     <td>{{task.taskName}}</td>
-    <td>{{task.startTIme | date: 'yyyy-MM-dd'}}</td>
-    <td>{{task.startEnd | date: 'yyyy-MM-dd'}}</td>
+    <td>{{task.startDate | date: 'yyyy-MM-dd'}}</td>
+    <td>{{task.endDate | date: 'yyyy-MM-dd'}}</td>
     <td>{{task.process}}</td>
-    <td>{{task.worker}}</td>
-    <td>{{task.kind}}</td>
+    <td>{{task.executor}}</td>
+    <td>{{task.type}}</td>
     <td><a [routerLink]="['./edit', task.id]">编辑</a> &nbsp;&nbsp;<button (click)="onDelete(task)">删除</button></td>
   </tr>
 </table>
